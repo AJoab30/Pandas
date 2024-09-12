@@ -1,0 +1,10 @@
+import pandas as pd
+
+# Load data
+data = pd.read_csv('forensic_data.csv')
+
+# Extract relevant columns
+extracted_data = data[['timestamp', 'ip_address', 'user_activity']]
+
+# Display extracted data
+print(extracted_data)
